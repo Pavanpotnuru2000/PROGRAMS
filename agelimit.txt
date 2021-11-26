@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Main{
+  public static void main(String[] args){
+    Scanner Sc = new Scanner(System.in);
+    System.out.println("enter your age:");
+    int age = Sc.nextInt();
+    if(age>=1 && age<=12)
+    {
+      System.out.println("kid");
+    }else if(age>=13 && age<=19){
+      System.out.println("Teenager");
+    }else if(age>=20  &&  age<=35){
+      System.out.println("Youth");
+    }else if(age>=36  &&  age<=60){
+      System.out.println("Middle Age");
+    }else if(age>=60 && age<=120){
+      System.out.println("Old age");
+    }else if(age>=120){
+      System.out.println("RIP");
+    }else{
+      System.out.println("Invalid Age");
+    }
+  }
+}

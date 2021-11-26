@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Main{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Printing the Details of Student:");
+    System.out.println("Enter the name:");
+    String str = sc.next();
+    System.out.println("Enter the Age:");
+    int age = sc.nextInt();
+    System.out.println("Enter the Gender:");
+    String str2 = sc.next();
+    System.out.println("Enter the EmailID:");
+    String str3 = sc.next();
+    System.out.println("******Student Bio****** \n "
+    + "\t" +"Name :"+" "+ str +"\n"+ "\t"+ 
+            "Age :"+" "+   age +"\n"+ "\t"+
+           "Gender :"+" "+ str2 +"\n"+ "\t"+
+          "Email :"+" "+  str3 +"\n"+ "\t");
+
+  }
+}

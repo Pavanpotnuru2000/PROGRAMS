@@ -1,0 +1,27 @@
+import java.util.*;
+public class Main{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    int word = 0;
+    int character = 0;
+    System.out.println("enter the statement");
+    String statement = sc.nextLine();
+    System.out.println(statement.length());
+    for(int i = 0;i<statement.length();i++)
+    {
+       if( statement.charAt(i) == ' '){
+         word++;
+         character++;
+
+       }else{
+         character++;
+       }
+       
+    }
+    System.out.println(word+1);
+    System.out.println(character);
+
+  }}
+
+    
+    

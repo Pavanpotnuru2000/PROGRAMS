@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Main{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    System.out.println("enter the no1");
+    int x = sc.nextInt();
+    System.out.println("enter the no2");
+    int y = sc.nextInt();
+    System.out.println("enter the no3");
+    int z = sc.nextInt();
+    System.out.println("enter the no4");
+    int w = sc.nextInt();
+    int a = (x>y)?x:y;
+    int b = (a>z)?a:z;
+    int c = (b>w)?b:w;
+    System.out.println(c);
+  }
+}

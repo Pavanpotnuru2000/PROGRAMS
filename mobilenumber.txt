@@ -1,0 +1,12 @@
+import java.util.Scanner;
+class Main{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    System.out.println("enter the mobile number");
+    long no = sc.nextLong();
+    long no2 = 9988446688L ;
+    Boolean a = (no == no2) ;
+    System.out.println(a);
+
+  }
+}

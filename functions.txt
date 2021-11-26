@@ -1,0 +1,73 @@
+import java.util.Scanner;
+public class Main{
+    int readInteger() {
+     Scanner sc;
+     sc = new Scanner(System.in);
+     System.out.println("enter an integer");
+     int number = sc.nextInt();
+     return number;
+     
+   }
+    boolean evenOrOdd(int a){
+      
+      if(a%2 == 0)
+      {
+        return true;
+      }else{
+        return false;
+      }
+    }
+    boolean checkPrime(int b,int count){
+      for(int i = 1;i<=b/2;i++){
+      if(b%i == 0){
+  
+        count++;
+      }
+
+      }if(count == 1 || count == 2){
+        return true;
+      }else {
+        return false;
+      }
+
+    }
+    int factorial(int f){
+        int fact = 1;
+        for(int i = 1;i<=f;i++){
+          fact = fact*i;
+        }
+        //System.out.println(fact);
+        return fact;
+
+    }
+  int sumOfDigits(int s){
+    int sum = 0;
+    int p;
+    p = s%10;
+    sum = sum+p;
+    s = s/10;
+    return s;
+
+
+  }
+
+
+public static void main(String[] args)
+{
+  //declaring object
+    Main obj1;
+  //instanstiating object
+    obj1 = new Main();
+    int x = obj1.readInteger();
+    System.out.println(x);
+    boolean EVENODD = obj1.evenOrOdd(x);
+    System.out.println(EVENODD);
+    boolean prime = obj1.checkPrime(x,0);
+    System.out.println(prime);
+    int numberfact = obj1.factorial(x);
+    System.out.println(numberfact);
+    int sumofdigit = obj1.sumOfDigits(x);
+    System.out.println(sumofdigit); 
+
+
+}}

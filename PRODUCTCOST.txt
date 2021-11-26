@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Main{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    System.out.println("enter the product cost");
+    int cost = sc.nextInt();
+    if(cost<5000){
+      System.out.println("No Discount");
+    }else if(cost>=5000 && cost<=10000){
+      System.out.println("2% discount"+"& "+ "final cost is"+(cost- (cost*0.02)));}
+      else if(cost>=10000 && cost<=25000){
+      System.out.println("5% discount"+"& "+ "final cost is"+(cost- (cost*0.05)));}
+      else if(cost>=25000 && cost<=50000){
+      System.out.println("8% discount"+"& "+ "final cost is"+(cost- (cost*0.08)));}
+      else{
+        System.out.println("10% discount" + "&"+ "final cost is"+(cost-(cost-(cost*0.1))));}
+      }
+      }
+    
